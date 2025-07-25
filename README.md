@@ -14,22 +14,6 @@ python generar_datos_ventas.py
 python separar_ventas_por_dia.py
 ```
 
-## Limpieza del Repositorio
-
-Los archivos CSV están excluidos del control de versiones mediante `.gitignore`. Si necesitas limpiar el repositorio:
-
-```bash
-# Limpiar archivos CSV del repositorio (automático)
-python limpiar_repositorio.py
-
-# O manualmente:
-git rm --cached *.csv
-git rm -r --cached ventas_diarias/
-git rm -r --cached venta_detalle_diarias/
-git add .gitignore
-git commit -m "Remover archivos CSV del repositorio"
-```
-
 ### Requisitos
 - Python 3.6 o superior
 - No se requieren dependencias adicionales (solo módulos estándar de Python)
